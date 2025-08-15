@@ -22,6 +22,7 @@
       <h3>
         <a href="#" class="link">EK.</a>
       </h3>
+
       <nav class="nav center">
         <ul class="nav__list center">
           <li class="nav__list-item">
@@ -37,7 +38,49 @@
             <a class="link link--nav" href="#contact">Contact</a>
           </li>
         </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
       </nav>
     </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Emmanuel Kgaphola.</span></h1>
+        <h2 class="about__role">NOC Operator & IT Support Specialist</h2>
+        <p class="about__desc">
+          Results-driven IT professional with 1+ year of experience in 24/7
+          cloud administration, enterprise helpdesk support, and network
+          monitoring. Skilled in Azure AD, PowerShell automation, and
+          maintaining 99.8% system uptime for critical mining/logistics systems.
+          Passionate about combining technical expertise with exceptional client
+          service.
+        </p>
+
+        <div class="about__contact center">
+          <a href="#contact">
+            <span class="btn btn--outline">Contact Me</span>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/emmanuel-kgaphola"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
