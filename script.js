@@ -24,3 +24,21 @@ const setTheme = (bodyClass, btnClass) => {
   localStorage.setItem("portfolio-theme", bodyClass);
   localStorage.setItem("portfolio-btn-theme", btnClass);
 };
+const toggleTheme = () =>
+  isDark() ? setTheme("light", "fa-moon") : setTheme("dark", "fa-sun");
+
+btnTheme.addEventListener("click", toggleTheme);
+
+const displayList = () => {
+  const navUl = document.querySelector(".nav__list");
+
+  if (btnHamburger.classList.contains("fa-bars")) {
+    btnHamburger.classList.remove("fa-bars");
+    btnHamburger.classList.add("fa-times");
+    navUl.classList.add("display-nav-list");
+  } else {
+    btnHamburger.classList.remove("fa-times");
+    btnHamburger.classList.add("fa-bars");
+    navUl.classList.remove("display-nav-list");
+  }
+};
